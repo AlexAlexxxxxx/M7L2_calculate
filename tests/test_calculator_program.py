@@ -10,6 +10,17 @@ def test_calculate_division():
 def test_calculate_unknown_operation():
     assert calculate(5, 5, 'unknown') == "Неизвестная операция."
 
+
+def test_calculate_fivision():
+    assert calculate(9, 2, '*') == 18
+
+
+def test_calculate_kivision():
+    assert calculate(89, 0, '-') == 89
+
+def test_calculate_pivision():
+    assert calculate(8, 0, '/') == "Ошибка: Деление на ноль."
+
 '''
 Задача. В настоящий момент реализовано три unit-теста
 Проверяется корректность работы калькулятора для действий сложения, деления и неизвестной операции
